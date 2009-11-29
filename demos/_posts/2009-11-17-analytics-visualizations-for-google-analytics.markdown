@@ -1,7 +1,7 @@
 ---
 layout: demo
 title: Analytics Visualizations for Google Analytics
-thumbnail: /images/analyticsvisualizations.png
+thumbnail: /images/analyticsvisualizations.jpg
 ---
 ## {{ page.title }}
 
