@@ -144,6 +144,14 @@ ul.posts {
     margin-left: 1em;
   }
 
+  .site .title a.commercial {
+    background-color: #0cf;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: 1em;
+  }
+
   .site .title a.download:hover {
     text-decoration: underline;
   }
