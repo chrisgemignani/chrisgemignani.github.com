@@ -8,7 +8,7 @@ title: JuiceKit
         <td style="width: 450px; padding-right: 20px; vertical-align: top">
             <h2>Demos with source code available</h2>
                 {% for post in site.categories.demos %}
-                  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+                  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>{{ post.thumbnail }}</li>
                 {% endfor %}
             
         </td>
