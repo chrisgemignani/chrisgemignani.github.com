@@ -10,7 +10,7 @@ title: JuiceKit
             <h2>Most recent release</h2>
                 <p><a href="/downloads/juicekit_1.2.0.zip">Latest version</a></p>
                 {% for release in site.categories.releases limit:1 %}
-                  <li><span>{{ release.version }} -- {{ release.date | date_to_string }}</span> &raquo; <a href="{{ release.url }}">{{ post.title }}</a></li>
+                  <li><span>{{ release.version }} -- {{ release.date | date_to_string }}</span> &raquo; <a href="{{ release.url }}">{{ release.title }}</a></li>
                 {% endfor %}
             
         </td>
@@ -18,7 +18,7 @@ title: JuiceKit
         <td style="width: 450px; margin-left: 1px solid #cccccc; vertical-align: top">
             <h4>Older releases</h4>
                 {% for release in site.categories.releases offset:1 %}                  
-                  <li><span>{{ release.version }} -- {{ release.date | date_to_string }}</span> &raquo; <a href="{{ release.url }}">{{ post.title }}</a></li>
+                  <li><span>{{ release.version }} -- {{ release.date | date_to_string }}</span> &raquo; <a href="{{ release.url }}">{{ release.title }}</a></li>
                 {% endfor %}
             
             
