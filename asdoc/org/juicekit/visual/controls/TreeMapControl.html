@@ -4,19 +4,19 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
-<meta content="TreeMapControl,org.juicekit.visual.controls.TreeMapControl,freezeColorsOnDataChange,freezeColorsOnDataRootChange,highlightRollOver,styleFromDataRoot,colorPalette,freezeColors,nodeFlashFilters,colorEncodingField,data,dataRoot,extraOperators,labelEncodingField,maxLabelDepth,minLabelDepth,sizeEncodingField,truncateToFit,getColorEncoder,onMouseOut,onMouseOver,setColorScaleRange,unsetColorScaleRange" name="keywords">
+<meta content="TreeMapControl,org.juicekit.visual.controls.TreeMapControl,freezeColorsOnDataChange,freezeColorsOnDataRootChange,highlightRollOver,preferredMaxColor,preferredMinColor,styleFromDataRoot,colorPalette,defaultEmphasizeEffect,freezeColors,maxDepth,nodeFlashFilters,palette,colorEncodingField,data,dataRoot,extraOperators,labelEncodingField,maxLabelDepth,minLabelDepth,sizeEncodingField,truncateToFit,deemphasize,emphasize,emphasizerReset,getColorEncoder,onMouseOut,onMouseOver,setColorScaleRange,unsetColorScaleRange,updateEmphasizer" name="keywords">
 <title>org.juicekit.visual.controls.TreeMapControl</title>
 </head>
 <body>
 <script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
 <!--
-				asdocTitle = 'TreeMapControl - API Documentation';
+				asdocTitle = 'TreeMapControl - JuiceKit, a Flash visualization framework, version 1.2.2';
 				var baseRef = '../../../../';
 				window.onload = configPage;
 			--></script>
 <table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
 <tr>
-<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/juicekit/visual/controls/TreeMapControl.html&amp;org/juicekit/visual/controls/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+<td align="left" class="titleTableTitle">JuiceKit, a Flash visualization framework, version 1.2.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/juicekit/visual/controls/TreeMapControl.html&amp;org/juicekit/visual/controls/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
 </tr>
 <tr class="titleTableRow2">
 <td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;TreeMapControl</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a>&nbsp;| <a href="#styleSummary">Styles</a></td>
@@ -77,14 +77,19 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#dataRoot">dataRoot</a> : NodeSprite<div class="summaryTableDescription">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#dataRoot">dataRoot</a> : <a href="../../../../flare/vis/data/NodeSprite.html">NodeSprite</a>
+<div class="summaryTableDescription">
      Sets the a data set's <code>root</code> reference to the
      <code>nodeSprite</code> parameter.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#defaultEmphasizeEffect">defaultEmphasizeEffect</a> : Object<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#extraOperators">extraOperators</a> : Array<div class="summaryTableDescription">
-    Extra operators to include in the visualization.</div>
+     Extra operators to include in the visualization.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
@@ -93,12 +98,12 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#freezeColorsOnDataChange">freezeColorsOnDataChange</a> : Boolean = false<div class="summaryTableDescription">
-    Recalculate the color range when the data changes.</div>
+     Recalculate the color range when the data changes.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#freezeColorsOnDataRootChange">freezeColorsOnDataRootChange</a> : Boolean = true<div class="summaryTableDescription">
-    Freeze the color range when the data root changes.</div>
+     Freeze the color range when the data root changes.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
@@ -119,6 +124,10 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableOwnerCol"><a href="../renderers/RendererBase.html">RendererBase</a></td>
 </tr>
 <tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxDepth">maxDepth</a> : int<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxLabelDepth">maxLabelDepth</a> : int<div class="summaryTableDescription">
      Sets the maximum hierarchy depth that labels will be applied
      to the visualization's rectangles.</div>
@@ -135,6 +144,20 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#palette">palette</a> : *<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#preferredMaxColor">preferredMaxColor</a> : Number = NaN<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#preferredMinColor">preferredMinColor</a> : Number = NaN<div class="summaryTableDescription">
+     Preferred min and max colors for the color encoder
+     </div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#sizeEncodingField">sizeEncodingField</a> : String<div class="summaryTableDescription">
      Specifies a data <code>Object</code> property's name used
      to encode a treemap rectangle's visual size.</div>
@@ -142,9 +165,9 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#styleFromDataRoot">styleFromDataRoot</a> : Boolean = false<div class="summaryTableDescription">
-    Are node line width and line color (strokeColors, strokeThickness, 
-    strokeAlpha) styling based the depth from the data root
-    or from the base of the tree.</div>
+     Are node line width and line color (strokeColors, strokeThickness,
+     strokeAlpha) styling based the depth from the data root
+     or from the base of the tree.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="hideInheritedProperty">
@@ -159,7 +182,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="hideInheritedProperty">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="FlareControlBase.html#vis">vis</a> : Visualization = null<div class="summaryTableDescription">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="FlareControlBase.html#vis">vis</a> : <a href="../../../../flare/vis/Visualization.html">Visualization</a> = null<div class="summaryTableDescription">
      Stores reference to the prefuse.flare <code>Visualization</code> context.</div>
 </td><td class="summaryTableOwnerCol"><a href="FlareControlBase.html">FlareControlBase</a></td>
 </tr>
@@ -212,7 +235,33 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#getColorEncoder()">getColorEncoder</a>():ColorEncoder</div>
+<a class="signatureLink" href="#deemphasize()">deemphasize</a>(val:String):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#emphasize()">emphasize</a>(val:String, testFunction:Function = null):void</div>
+<div class="summaryTableDescription">
+     Append emphasizers and deemphasizers to the emphasizeList
+          emphasize can be passed a function that takes a DataSprite and returns a boolean
+     Alternatively, the default behavior is a simple string match for the val
+     </div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#emphasizerReset()">emphasizerReset</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getColorEncoder()">getColorEncoder</a>():<a href="../../../../flare/vis/operator/encoder/ColorEncoder.html">ColorEncoder</a>
+</div>
 <div class="summaryTableDescription">
      Get the Flare ColorEncoder
      </div>
@@ -236,6 +285,14 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summaryTableDescription">
      Forces the color mapping range to be determined by the minimum
      and maximum <code>data</code> values.</div>
+</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateEmphasizer()">updateEmphasizer</a>():void</div>
+<div class="summaryTableDescription">
+    Runs the emphasizer effect.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 </table>
@@ -300,7 +357,8 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="hideInheritedProtectedMethod">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="FlareControlBase.html#makeVisualization()">makeVisualization</a>():Visualization</div>
+<a class="signatureLink" href="FlareControlBase.html#makeVisualization()">makeVisualization</a>():<a href="../../../../flare/vis/Visualization.html">Visualization</a>
+</div>
 <div class="summaryTableDescription">
      Create a prefuse.flare <code>Visualization</code> instance.</div>
 </td><td class="summaryTableOwnerCol"><a href="FlareControlBase.html">FlareControlBase</a></td>
@@ -538,14 +596,12 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <span class="signatureLink">labelColorStrategy</span>
 </div>
 </td><td class="summaryTableDescription"><span class="label">Type: </span>String &nbsp; <span class="label">CSS Inheritance: </span>no<br>
-   Possible labelColorStrategy values are: <code>blackwhite</code> adaptively choose black or 
-   white depending on the background color, <code>glow</code> apply a white glow around 
+   Possible labelColorStrategy values are: <code>blackwhite</code> adaptively choose black or
+   white depending on the background color, <code>glow</code> apply a white glow around
    letters or <code>none</code> don't apply any effect.
-   
-   Deprecation warning: This default will be changed to <code>blackwhite</code> in
-   JuiceKit 2.0. 
-   
-    The default value is <code>"glow"</code>.</td><td class="summaryTableOwnerCol">TreeMapControl</td>
+      Deprecation warning: This default will be changed to <code>blackwhite</code> in
+   JuiceKit 2.0.
+       The default value is <code>"glow"</code>.</td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol"><a name="style:maxEncodedColor"></a>&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
@@ -612,19 +668,6 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableDescription"><span class="label">Type: </span>Number &nbsp; <span class="label">Format: </span>Length &nbsp; <span class="label">CSS Inheritance: </span>no<br>
  Number of pixels between the component's top border
  and the top edge of its content area.</td><td class="summaryTableOwnerCol"><a href="FlareControlBase.html">FlareControlBase</a></td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol"><a name="style:palette"></a>&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<span class="signatureLink">palette</span>
-</div>
-</td><td class="summaryTableDescription"><span class="label">Type: </span>String &nbsp; <span class="label">CSS Inheritance: </span>yes<br>
-   Determines the color palette to use
-   Possible values are <code>"hot"</code>, <code>"cool"</code>,
-   <code>"summer"</code>, <code>"winter"</code>, <code>"spring"</code>
-   <code>"autumn"</code>, <code>"bone"</code>, <code>"copper"</code>
-   or <code>"pink"</code>.
-       The default value is <code>"spectral"</code>.</td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
 <td class="summaryTablePaddingCol"><a name="style:strokeAlphas"></a>&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
@@ -758,7 +801,9 @@ showHideInherited();
 <p>
 <span class="label">See also</span>
 </p>
-<div class="seeAlso">flare.vis.data.Tree</div>
+<div class="seeAlso">
+<a href="../../../../flare/vis/data/Tree.html" target="">flare.vis.data.Tree</a>
+</div>
 </div>
 <a name="dataRoot"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -767,15 +812,29 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>dataRoot:NodeSprite</code>&nbsp;&nbsp;[read-write]<p>
+<code>dataRoot:<a href="../../../../flare/vis/data/NodeSprite.html">NodeSprite</a></code>&nbsp;&nbsp;[read-write]<p>
      Sets the a data set's <code>root</code> reference to the
      <code>nodeSprite</code> parameter.
           </p><p>This property can be used as the source for data binding.</p>
 <span class="label">Implementation</span>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dataRoot():NodeSprite</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get dataRoot():<a href="../../../../flare/vis/data/NodeSprite.html">NodeSprite</a></code>
 <br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set dataRoot(value:NodeSprite):void</code>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set dataRoot(value:<a href="../../../../flare/vis/data/NodeSprite.html">NodeSprite</a>):void</code>
+<br>
+</div>
+<a name="defaultEmphasizeEffect"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">defaultEmphasizeEffect</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>defaultEmphasizeEffect:Object</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get defaultEmphasizeEffect():Object</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set defaultEmphasizeEffect(value:Object):void</code>
 <br>
 </div>
 <a name="extraOperators"></a>
@@ -786,9 +845,8 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>extraOperators:Array</code>&nbsp;&nbsp;[read-write]<p>
-    Extra operators to include in the visualization.
-    
-    </p><span class="label">Implementation</span>
+     Extra operators to include in the visualization.
+          </p><span class="label">Implementation</span>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get extraOperators():Array</code>
 <br>
@@ -817,14 +875,11 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public var freezeColorsOnDataChange:Boolean = false</code><p>
-    Recalculate the color range when the data changes. 
-    
-    If true, colors will be frozen when the data changes.
-    
-    If false, the color scale will be recalculated
-    when the data changes.
-    
-    </p><p>The default value is <code>false</code>.</p>
+     Recalculate the color range when the data changes.
+          If true, colors will be frozen when the data changes.
+          If false, the color scale will be recalculated
+     when the data changes.
+          </p><p>The default value is <code>false</code>.</p>
 </div>
 <a name="freezeColorsOnDataRootChange"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -834,14 +889,11 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public var freezeColorsOnDataRootChange:Boolean = true</code><p>
-    Freeze the color range when the data root changes. 
-    
-    If true, colors will be frozen when the data root changes.
-    
-    If false, colors will be unfrozen and the color scale
-    will be recalculated when the data root changes.
-    
-    </p><p>The default value is <code>true</code>.</p>
+     Freeze the color range when the data root changes.
+          If true, colors will be frozen when the data root changes.
+          If false, colors will be unfrozen and the color scale
+     will be recalculated when the data root changes.
+          </p><p>The default value is <code>true</code>.</p>
 </div>
 <a name="highlightRollOver"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -873,6 +925,20 @@ showHideInherited();
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function get labelEncodingField():String</code>
 <br>
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function set labelEncodingField(value:String):void</code>
+<br>
+</div>
+<a name="maxDepth"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxDepth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>maxDepth:int</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maxDepth():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxDepth(value:int):void</code>
 <br>
 </div>
 <a name="maxLabelDepth"></a>
@@ -929,6 +995,39 @@ showHideInherited();
 <code>&nbsp;&nbsp;&nbsp;&nbsp;public function set nodeFlashFilters(value:Array):void</code>
 <br>
 </div>
+<a name="palette"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">palette</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>palette:*</code>&nbsp;&nbsp;[read-write]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get palette():*</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set palette(value:*):void</code>
+<br>
+</div>
+<a name="preferredMaxColor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">preferredMaxColor</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var preferredMaxColor:Number = NaN</code>
+</div>
+<a name="preferredMinColor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">preferredMinColor</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var preferredMinColor:Number = NaN</code><p>
+     Preferred min and max colors for the color encoder
+     </p></div>
 <a name="sizeEncodingField"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -956,10 +1055,10 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public var styleFromDataRoot:Boolean = false</code><p>
-    Are node line width and line color (strokeColors, strokeThickness, 
-    strokeAlpha) styling based the depth from the data root
-    or from the base of the tree.
-    </p></div>
+     Are node line width and line color (strokeColors, strokeThickness,
+     strokeAlpha) styling based the depth from the data root
+     or from the base of the tree.
+     </p></div>
 <a name="truncateToFit"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -993,20 +1092,67 @@ showHideInherited();
      </p></div>
 <a name="methodDetail"></a>
 <div class="detailSectionHeader">Method detail</div>
-<a name="getColorEncoder()"></a>
+<a name="deemphasize()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
-<td class="detailHeaderName">getColorEncoder</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+<td class="detailHeaderName">deemphasize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
 </tr>
 </table>
 <div class="detailBody">
-<code>public function getColorEncoder():ColorEncoder</code><p>
+<code>public function deemphasize(val:String):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">val</span>:String</code></td>
+</tr>
+</table>
+</div>
+<a name="emphasize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">emphasize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function emphasize(val:String, testFunction:Function = null):void</code><p>
+     Append emphasizers and deemphasizers to the emphasizeList
+          emphasize can be passed a function that takes a DataSprite and returns a boolean
+     Alternatively, the default behavior is a simple string match for the val
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">val</span>:String</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">testFunction</span>:Function</code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="emphasizerReset()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">emphasizerReset</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function emphasizerReset():void</code>
+</div>
+<a name="getColorEncoder()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getColorEncoder</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getColorEncoder():<a href="../../../../flare/vis/operator/encoder/ColorEncoder.html">ColorEncoder</a></code><p>
      Get the Flare ColorEncoder
      </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20"></td><td><code>ColorEncoder</code></td>
+<td width="20"></td><td><code><a href="../../../../flare/vis/operator/encoder/ColorEncoder.html">ColorEncoder</a></code></td>
 </tr>
 </table>
 </div>
@@ -1085,6 +1231,16 @@ showHideInherited();
      and maximum <code>data</code> values. This is the default algorithm for
      <code>TreeMapControl</code> instances.
      </p></div>
+<a name="updateEmphasizer()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateEmphasizer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateEmphasizer():void</code><p>
+    Runs the emphasizer effect.
+    </p></div>
 <br>
 <br>
 <hr>

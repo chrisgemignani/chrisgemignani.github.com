@@ -10,13 +10,13 @@
 <body>
 <script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
 <!--
-				asdocTitle = 'FlareControlBase - API Documentation';
+				asdocTitle = 'FlareControlBase - JuiceKit, a Flash visualization framework, version 1.2.2';
 				var baseRef = '../../../../';
 				window.onload = configPage;
 			--></script>
 <table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
 <tr>
-<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/juicekit/visual/controls/FlareControlBase.html&amp;org/juicekit/visual/controls/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+<td align="left" class="titleTableTitle">JuiceKit, a Flash visualization framework, version 1.2.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/juicekit/visual/controls/FlareControlBase.html&amp;org/juicekit/visual/controls/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
 </tr>
 <tr class="titleTableRow2">
 <td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;FlareControlBase</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a>&nbsp;| <a href="#styleSummary">Styles</a></td>
@@ -84,7 +84,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableOwnerCol">FlareControlBase</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#vis">vis</a> : Visualization = null<div class="summaryTableDescription">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#vis">vis</a> : <a href="../../../../flare/vis/Visualization.html">Visualization</a> = null<div class="summaryTableDescription">
      Stores reference to the prefuse.flare <code>Visualization</code> context.</div>
 </td><td class="summaryTableOwnerCol">FlareControlBase</td>
 </tr>
@@ -189,7 +189,8 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
-<a class="signatureLink" href="#makeVisualization()">makeVisualization</a>():Visualization</div>
+<a class="signatureLink" href="#makeVisualization()">makeVisualization</a>():<a href="../../../../flare/vis/Visualization.html">Visualization</a>
+</div>
 <div class="summaryTableDescription">
      Create a prefuse.flare <code>Visualization</code> instance.</div>
 </td><td class="summaryTableOwnerCol">FlareControlBase</td>
@@ -428,7 +429,7 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public var vis:Visualization = null</code><p>
+<code>public var vis:<a href="../../../../flare/vis/Visualization.html">Visualization</a> = null</code><p>
      Stores reference to the prefuse.flare <code>Visualization</code> context.
      </p></div>
 <a name="constructorDetail"></a>
@@ -530,14 +531,17 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>protected function makeVisualization():Visualization</code><p>
+<code>protected function makeVisualization():<a href="../../../../flare/vis/Visualization.html">Visualization</a></code><p>
      Create a prefuse.flare <code>Visualization</code> instance.
           </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td width="20"></td><td><code>Visualization</code> &mdash; Returns a prefuse.flare <code>Visualization</code> instance.
-     </td>
+<td width="20"></td><td><code><a href="../../../../flare/vis/Visualization.html">Visualization</a></code> &mdash; 
+                        Returns a prefuse.flare <code>Visualization</code> instance.
+     
+                        
+                     </td>
 </tr>
 </table>
 </div>
@@ -683,7 +687,7 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<span class="label">Event object type: </span><a href=""><code>flare.animate.TransitionEvent</code></a>
+<span class="label">Event object type: </span><a href="../../../../flare/animate/TransitionEvent.html"><code>flare.animate.TransitionEvent</code></a>
 <br>
 <p></p><p>
    Dispatched when an animating <code>Visualization</code>
@@ -748,7 +752,7 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<span class="label">Event object type: </span><a href=""><code>flare.animate.TransitionEvent</code></a>
+<span class="label">Event object type: </span><a href="../../../../flare/animate/TransitionEvent.html"><code>flare.animate.TransitionEvent</code></a>
 <br>
 <p></p><p>
    Dispatched when an animating <code>Visualization</code>
