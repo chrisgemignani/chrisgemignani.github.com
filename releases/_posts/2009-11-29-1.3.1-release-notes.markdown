@@ -4,7 +4,7 @@ title: 'JuiceKit 1.3.1 Release Notes'
 version: 1.3.1
 categories: ['release']
 # must include release version
-# do not include a title element
+# do not include a title element in the contents of the text
 ---
 Author: Chris Gemignani, chris.gemignani@juiceanalytics.com<br>
 <h2>Backwards-incompatible changes</h2>
