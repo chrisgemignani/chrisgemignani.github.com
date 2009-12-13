@@ -4,14 +4,14 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Tom Preston-Werner</title>
- <link href="http://tom.preston-werner.com/atom.xml" rel="self"/>
- <link href="http://tom.preston-werner.com/"/>
+ <title>JuiceKit Weblog</title>
+ <link href="http://juicekit.org/feeds/atom.xml" rel="self"/>
+ <link href="http://juicekit.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://tom.preston-werner.com/</id>
+ <id>http://juicekit.org</id>
  <author>
-   <name>Tom Preston-Werner</name>
-   <email>tom@mojombo.com</email>
+   <name>Chris Gemignani</name>
+   <email>chris.gemignani@juiceanalytics.com</email>
  </author>
 
  {% for post in site.categories.blog %}

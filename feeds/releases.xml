@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>JuiceKit Releases</title>
+ <link href="http://juicekit.org/feeds/releases.xml" rel="self"/>
+ <link href="http://juicekit.org/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://juicekit.org</id>
+ <author>
+   <name>Chris Gemignani</name>
+   <email>chris.gemignani@juiceanalytics.com</email>
+ </author>
+
+ {% for release in site.categories.releases %}
+ <entry>
+   <title>{{ release.title }}</title>
+   <link href="http://juicekit.org{{ release.url }}"/>
+   <updated>{{ release.date | date_to_xmlschema }}</updated>
+   <id>http://juicekit.org{{ release.id }}</id>
+   <content type="html">{{ release.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
