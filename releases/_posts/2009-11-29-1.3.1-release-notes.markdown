@@ -6,7 +6,7 @@ categories: ['release']
 # must include release version
 # do not include a title element in the contents of the text
 ---
-Author: Chris Gemignani, chris.gemignani@juiceanalytics.com<br>
+Author: Sal Uryasev, chris.gemignani@juiceanalytics.com<br>
 <h2>Backwards-incompatible changes</h2>
 JuiceKit has a policy of API stability. That means that if you develop against JuiceKit 1.X, your code will continue to work against newly released 1.X versions of JuiceKit. <br>
 <br>
