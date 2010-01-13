@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ligurino-condensed-1","ligurino-condensed-2", "garagier-1","garagier-2", Georgia;
+  font-family: "ligurino-condensed-1","ligurino-condensed-2", "garagier-1","garagier-2", "MyriadPro-Cond", "Myriad Pro", Helvetica, Arial, Georgia;
   font-weight: normal;
   font-size: 100%;
   margin-top: 1em;
@@ -115,7 +115,7 @@ ul.posts {
 }
 
   .site .title a {
-    font-family: "ligurino-condensed-1","ligurino-condensed-2", "garagier-1","garagier-2", Georgia;
+    font-family: "ligurino-condensed-1","ligurino-condensed-2", "garagier-1","garagier-2", "MyriadPro-Cond", "Myriad Pro", Helvetica, Arial, Georgia;
     color: #a00;
     text-decoration: none;
   }

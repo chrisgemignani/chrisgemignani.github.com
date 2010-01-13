@@ -4,19 +4,19 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
-<meta content="TreeMapControl,org.juicekit.visual.controls.TreeMapControl,freezeColorsOnDataChange,freezeColorsOnDataRootChange,highlightRollOver,preferredMaxColor,preferredMinColor,styleFromDataRoot,colorPalette,defaultEmphasizeEffect,freezeColors,maxDepth,nodeFlashFilters,palette,colorEncodingField,data,dataRoot,extraOperators,labelEncodingField,maxLabelDepth,minLabelDepth,sizeEncodingField,truncateToFit,deemphasize,emphasize,emphasizerReset,getColorEncoder,onMouseOut,onMouseOver,setColorScaleRange,unsetColorScaleRange,updateEmphasizer" name="keywords">
+<meta content="TreeMapControl,org.juicekit.visual.controls.TreeMapControl,freezeColorsOnDataChange,freezeColorsOnDataRootChange,highlightRollOver,styleFromDataRoot,colorPalette,defaultEmphasizeEffect,freezeColors,maxDepth,nodeFlashFilters,palette,colorEncodingField,data,dataRoot,extraOperators,labelEncodingField,maxLabelDepth,minLabelDepth,preferredMaxColor,preferredMinColor,sizeEncodingField,truncateToFit,deemphasize,emphasize,emphasizerReset,getColorEncoder,onMouseOut,onMouseOver,setColorScaleRange,unsetColorScaleRange,updateEmphasizer" name="keywords">
 <title>org.juicekit.visual.controls.TreeMapControl</title>
 </head>
 <body>
 <script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
 <!--
-				asdocTitle = 'TreeMapControl - JuiceKit, a Flash visualization framework, version 1.2.2';
+				asdocTitle = 'TreeMapControl - JuiceKit, a Flash visualization framework, version 1.2.1ac';
 				var baseRef = '../../../../';
 				window.onload = configPage;
 			--></script>
 <table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
 <tr>
-<td align="left" class="titleTableTitle">JuiceKit, a Flash visualization framework, version 1.2.2</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/juicekit/visual/controls/TreeMapControl.html&amp;org/juicekit/visual/controls/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+<td align="left" class="titleTableTitle">JuiceKit, a Flash visualization framework, version 1.2.1ac</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?org/juicekit/visual/controls/TreeMapControl.html&amp;org/juicekit/visual/controls/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
 </tr>
 <tr class="titleTableRow2">
 <td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;TreeMapControl</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a>&nbsp;| <a href="#styleSummary">Styles</a></td>
@@ -148,13 +148,15 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#preferredMaxColor">preferredMaxColor</a> : Number = NaN<div class="summaryTableDescription"></div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#preferredMaxColor">preferredMaxColor</a> : Number<div class="summaryTableDescription">
+     Specifies the maximum used
+     to encode a treemap rectangle's color.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#preferredMinColor">preferredMinColor</a> : Number = NaN<div class="summaryTableDescription">
-     Preferred min and max colors for the color encoder
-     </div>
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#preferredMinColor">preferredMinColor</a> : Number<div class="summaryTableDescription">
+     Specifies the minimum value used
+     to encode a treemap rectangle's color.</div>
 </td><td class="summaryTableOwnerCol">TreeMapControl</td>
 </tr>
 <tr class="">
@@ -1016,7 +1018,17 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public var preferredMaxColor:Number = NaN</code>
+<code>preferredMaxColor:Number</code>&nbsp;&nbsp;[read-write]<p>
+     Specifies the maximum used
+     to encode a treemap rectangle's color.
+          </p><p>The default value is <code>"color"</code>.</p>
+<p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get preferredMaxColor():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set preferredMaxColor(value:Number):void</code>
+<br>
 </div>
 <a name="preferredMinColor"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
@@ -1025,9 +1037,18 @@ showHideInherited();
 </tr>
 </table>
 <div class="detailBody">
-<code>public var preferredMinColor:Number = NaN</code><p>
-     Preferred min and max colors for the color encoder
-     </p></div>
+<code>preferredMinColor:Number</code>&nbsp;&nbsp;[read-write]<p>
+     Specifies the minimum value used
+     to encode a treemap rectangle's color.
+          </p><p>The default value is <code>"color"</code>.</p>
+<p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get preferredMinColor():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set preferredMinColor(value:Number):void</code>
+<br>
+</div>
 <a name="sizeEncodingField"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
